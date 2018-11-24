@@ -5,7 +5,7 @@ if [ $# != 3 ]; then
 	echo "Usage: ./rename_all.sh directory from to"
 	exit 1
 fi
-if ! [ -d $1 ]; then
+if ! [ -d "$1" ]; then
 	echo "$1" is not a directory
 	exit 2
 fi
